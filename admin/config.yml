@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/uploads" # Chemin pour les médias
+public_folder: "/assets/uploads" # Chemin public
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "src/pages"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
